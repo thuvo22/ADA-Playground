@@ -1,0 +1,29 @@
+
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+procedure Hello is
+
+A: Integer :=3;
+B: Integer := 4;
+C: Integer := 1;
+
+
+Procedure One (X: in Integer;
+Y: in Integer) is
+
+B: Integer; --local variable
+
+begin
+    A:=10;
+    B:=1; --will get the global value
+    C:= X+C;
+    end One;
+begin
+One(A,B); --Procedure One is called 
+Put(A,1); --(10)
+New_Line;
+Put(B,1); --(4)
+New_line;
+Put(C,1); --(4)
+
+end Hello;
