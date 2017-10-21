@@ -9,11 +9,11 @@ procedure Hello is
 
 begin
 
-       for Number in Number_Range loop
+       for Number in Number_Range loop --Number is an index
        Get(Value(Number));
        end loop;
        
-       for Number in reverse Number_Range loop
+       for Number in reverse Number_Range loop --Number is an index
        Put(Value(Number));
        New_Line;
        end loop;
