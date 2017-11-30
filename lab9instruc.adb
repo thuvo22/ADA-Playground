@@ -1,12 +1,12 @@
-CS 180          Lab 9                                                                 Due by beginning of class on Friday, 10/27/17
+--CS 180          Lab 9                                                                 Due by beginning of class on Friday, 10/27/17
 
-This lab investigates enumerated data types, two-dimensional arrays, parallel one-dimensional arrays, the Get_Line procedure, and I/O of enumerated data types.
+--This lab investigates enumerated data types, two-dimensional arrays, parallel one-dimensional arrays, the Get_Line procedure, and I/O of enumerated data types.
 
-Your task is to first, understand the code provided below.  Then modify the following code to print the column headings (as enumerated types, not strings) above their respective data in the two-dimensional array.
+--Your task is to first, understand the code provided below.  Then modify the following code to print the column headings (as enumerated types, not strings) above their respective data in the two-dimensional array.
 
-Each record of the input file (an initial test file is provided on Blackboard) consists of 5 scores:  a program score, quiz score, homework score, lab score, test score, and student name, in this order.  Of particular note, is the fact that the names are not any specific length and they do not have blanks appended to make them uniform length.
+--Each record of the input file (an initial test file is provided on Blackboard) consists of 5 scores:  a program score, quiz score, homework score, lab score, test score, and student name, in this order.  Of particular note, is the fact that the names are not any specific length and they do not have blanks appended to make them uniform length.
 
-The program below reads all the data, stores it in the appropriate data structures.  You need to complete the procedure that outputs the data.  One of the things you’ll need to do is figure out how to make the column headings (PROGRAM, QUIZ, HOMEWORK, LAB, TEST) appear above their respective columns as you print the two-dimensional array; note that you must output the enumerated type as the enumerated type, itself and not convert it to a string before output.
+--The program below reads all the data, stores it in the appropriate data structures.  You need to complete the procedure that outputs the data.  One of the things you’ll need to do is figure out how to make the column headings (PROGRAM, QUIZ, HOMEWORK, LAB, TEST) appear above their respective columns as you print the two-dimensional array; note that you must output the enumerated type as the enumerated type, itself and not convert it to a string before output.
 
 
 
