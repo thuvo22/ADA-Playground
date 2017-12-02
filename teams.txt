@@ -1,0 +1,16 @@
+5	
+5  6  Caleb Jones
+1  11  Mike Smith	
+5  3  John Timothy	
+2  5  Scott Carter	
+5  9  Sarah Michaels	
+3  15  Carrie Lord	
+4  1  Victor Jordan	
+1  13  Cassie Lyle	
+4  10  Mark Bryant	
+2  7  Steve Barr	
+4  12  Carolyn Fay	
+3  2  Kallie Martin	
+1  14  Pat Marks	
+3  4  Tracy Harrington	
+2  8  Kyle Marion	
