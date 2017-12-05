@@ -29,6 +29,7 @@ PROCEDURE Prog3 IS
    BEGIN---Compute Price
       Price_FP:= Float(Num_Items_FP)*Price_Item_FP;
       Set_Col(30);
+      Put("$");
       Put(Price_FP,1,2,0);
    END Compute_Price;
 
@@ -49,13 +50,12 @@ PROCEDURE Prog3 IS
    FUNCTION Compute_Change(Payment_FP:Float;
                            Total_Price_FP: Float)-- Compute Change.
          RETURN Float IS
-    -------------------------------Subprogram description----------------------------------
+    ---------------------------Subprogram description----------------------------------
     --This subprogram computes the Change based ont the subtraction between Payment
     --and Total Price.
-    ---------------------------------Identifier Table--------------------------------------
+    ---------------------------------Identifier Table------------------------------------------
     --Payment_FP    : Payment made by customer
-    --Total_Price_FP: Total Price calculated based on the previous Total
-    --Price and Price.
+    --Total_Price_FP: Total Price calculated based on the previous Total Price and Price.
     --Change_Fp     : Change calculated by Total Price and Payment
 
          Change_Fp: Float;
@@ -66,6 +66,13 @@ PROCEDURE Prog3 IS
 --------------------------------------------------------------------------------------------
    PROCEDURE First_Statement(Num_Items_FP: IN Integer;
          Price_Item_FP: IN Float) IS
+
+    -------------------------------Subprogram description----------------------------------
+    --This subprogram prints out the first statement including Number of Item and its price
+    ---------------------------------Identifier Table--------------------------------------
+    --Num_Items_FP   : Number of item in the data
+    --Price_Item_FP  : Price of each item that calculated above
+
    BEGIN-- Statement of number items and the price for each item.
       New_Line;
       Set_Col(3);
@@ -75,6 +82,11 @@ PROCEDURE Prog3 IS
    END First_Statement;
 ---------------------------------------------------------------------------------------------
    PROCEDURE Customer(Count_FP: IN Integer) IS
+    -------------------------------Subprogram description----------------------------------
+    --This subprogram prints out the customer number in order.
+    ---------------------------------Identifier Table--------------------------------------
+    --Count_FP: An integer identifier which attached to customer numbers.
+
    BEGIN--Customer number
       Put("Customer #");
       Put(Count_FP,1);
@@ -82,10 +94,16 @@ PROCEDURE Prog3 IS
 ---------------------------------------------------------------------------------------------
 
    PROCEDURE Output_Result(Total_Price_FP, Payment_FP: IN Float; Change_FP: IN Float ) IS
+    -------------------------------Subprogram description----------------------------------
+    --This subprogram prints out the Total Price, Payment received and Change.
+    ---------------------------------Identifier Table--------------------------------------
+    --Payment_FP    : Payment made by customer
+    --Total_Price_FP: Total Price calculated based on the previous Total Price and Price.
+    --Change_Fp     : Change calculated by Total Price and Payment
 
 BEGIN--Output of Total, Received and Change.
    Set_Col(30);
-   Put("----");
+   Put("------");
    New_Line;
    Set_Col(3);
    Put("Total: ");
