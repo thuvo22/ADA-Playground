@@ -3,7 +3,10 @@ WITH Ada.Integer_Text_IO; USE Ada.Integer_Text_IO;
 WITH Ada.Float_Text_IO; USE Ada.Float_Text_IO;
 
 PROCEDURE Prog6 IS
-
+   ------------------------------------------------------------------------------------
+   --Name: Thu Vo
+   --Class: CS 180-03
+   --Program: Six
    ------------------------Program Description-----------------------------------------
    --The program computes and prints out the list of student's grade and the total grades
    --by eliminating the highest and the smallest grade of the list. It computes and prints
